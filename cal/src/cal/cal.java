@@ -311,7 +311,7 @@ public class cal {
 				else if (operations == "sin")
 				{
 					double a;
-					a = Math.sin(firstnum); 
+					a = Math.sin(Math.toRadians(firstnum)); 
 					answer = String.format("%.6f", a);
 					txt.setText(answer);					
 				}
@@ -319,7 +319,7 @@ public class cal {
 				else if (operations == "cos")
 				{
 					double a;
-					a = Math.cos(firstnum); 
+					a = Math.cos(Math.toRadians(firstnum)); 
 					answer = String.format("%.6f", a);
 					txt.setText(answer);
 				}
@@ -327,7 +327,7 @@ public class cal {
 				else if (operations == "tan")
 				{
 					double a;
-					a = Math.tan(firstnum); 
+					a = Math.tan(Math.toRadians(firstnum)); 
 					answer = String.format("%.6f", a);
 					txt.setText(answer);
 				}
